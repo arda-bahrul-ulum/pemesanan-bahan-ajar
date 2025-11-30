@@ -1,0 +1,1314 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: #0a0e27;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Background Langit Luar Angkasa */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%),
+        linear-gradient(to bottom, rgba(26, 22, 37, 0.8) 0%, rgba(10, 14, 39, 0.9) 100%);
+    z-index: -2;
+}
+
+/* Bintang-bintang */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        /* Bintang besar (3px) */
+        radial-gradient(3px 3px at 8% 12%, #fff, transparent),
+        radial-gradient(3px 3px at 23% 45%, #fff, transparent),
+        radial-gradient(3px 3px at 47% 78%, #fff, transparent),
+        radial-gradient(3px 3px at 62% 15%, #fff, transparent),
+        radial-gradient(3px 3px at 81% 52%, #fff, transparent),
+        radial-gradient(3px 3px at 15% 88%, #fff, transparent),
+        radial-gradient(3px 3px at 38% 25%, #fff, transparent),
+        radial-gradient(3px 3px at 72% 65%, #fff, transparent),
+        radial-gradient(3px 3px at 91% 35%, #fff, transparent),
+        radial-gradient(3px 3px at 55% 92%, #fff, transparent),
+        /* Bintang sedang (2px) */
+        radial-gradient(2px 2px at 5% 30%, #fff, transparent),
+        radial-gradient(2px 2px at 12% 65%, #fff, transparent),
+        radial-gradient(2px 2px at 20% 15%, #fff, transparent),
+        radial-gradient(2px 2px at 28% 80%, #fff, transparent),
+        radial-gradient(2px 2px at 35% 42%, #fff, transparent),
+        radial-gradient(2px 2px at 42% 58%, #fff, transparent),
+        radial-gradient(2px 2px at 50% 25%, #fff, transparent),
+        radial-gradient(2px 2px at 58% 72%, #fff, transparent),
+        radial-gradient(2px 2px at 65% 18%, #fff, transparent),
+        radial-gradient(2px 2px at 72% 85%, #fff, transparent),
+        radial-gradient(2px 2px at 78% 35%, #fff, transparent),
+        radial-gradient(2px 2px at 85% 62%, #fff, transparent),
+        radial-gradient(2px 2px at 92% 8%, #fff, transparent),
+        radial-gradient(2px 2px at 15% 48%, #fff, transparent),
+        radial-gradient(2px 2px at 25% 22%, #fff, transparent),
+        radial-gradient(2px 2px at 33% 75%, #fff, transparent),
+        radial-gradient(2px 2px at 45% 38%, #fff, transparent),
+        radial-gradient(2px 2px at 55% 88%, #fff, transparent),
+        radial-gradient(2px 2px at 68% 28%, #fff, transparent),
+        radial-gradient(2px 2px at 75% 55%, #fff, transparent),
+        radial-gradient(2px 2px at 88% 42%, #fff, transparent),
+        radial-gradient(2px 2px at 95% 78%, #fff, transparent),
+        /* Bintang kecil (1px) */
+        radial-gradient(1px 1px at 3% 8%, #fff, transparent),
+        radial-gradient(1px 1px at 7% 22%, #fff, transparent),
+        radial-gradient(1px 1px at 11% 55%, #fff, transparent),
+        radial-gradient(1px 1px at 14% 38%, #fff, transparent),
+        radial-gradient(1px 1px at 18% 72%, #fff, transparent),
+        radial-gradient(1px 1px at 22% 15%, #fff, transparent),
+        radial-gradient(1px 1px at 26% 88%, #fff, transparent),
+        radial-gradient(1px 1px at 30% 45%, #fff, transparent),
+        radial-gradient(1px 1px at 34% 28%, #fff, transparent),
+        radial-gradient(1px 1px at 38% 65%, #fff, transparent),
+        radial-gradient(1px 1px at 42% 12%, #fff, transparent),
+        radial-gradient(1px 1px at 46% 78%, #fff, transparent),
+        radial-gradient(1px 1px at 50% 35%, #fff, transparent),
+        radial-gradient(1px 1px at 54% 58%, #fff, transparent),
+        radial-gradient(1px 1px at 58% 18%, #fff, transparent),
+        radial-gradient(1px 1px at 62% 82%, #fff, transparent),
+        radial-gradient(1px 1px at 66% 42%, #fff, transparent),
+        radial-gradient(1px 1px at 70% 25%, #fff, transparent),
+        radial-gradient(1px 1px at 74% 68%, #fff, transparent),
+        radial-gradient(1px 1px at 78% 8%, #fff, transparent),
+        radial-gradient(1px 1px at 82% 52%, #fff, transparent),
+        radial-gradient(1px 1px at 86% 75%, #fff, transparent),
+        radial-gradient(1px 1px at 90% 32%, #fff, transparent),
+        radial-gradient(1px 1px at 94% 88%, #fff, transparent),
+        radial-gradient(1px 1px at 98% 18%, #fff, transparent),
+        radial-gradient(1px 1px at 6% 62%, #fff, transparent),
+        radial-gradient(1px 1px at 10% 85%, #fff, transparent),
+        radial-gradient(1px 1px at 16% 28%, #fff, transparent),
+        radial-gradient(1px 1px at 24% 48%, #fff, transparent),
+        radial-gradient(1px 1px at 32% 15%, #fff, transparent),
+        radial-gradient(1px 1px at 40% 72%, #fff, transparent),
+        radial-gradient(1px 1px at 48% 38%, #fff, transparent),
+        radial-gradient(1px 1px at 56% 58%, #fff, transparent),
+        radial-gradient(1px 1px at 64% 22%, #fff, transparent),
+        radial-gradient(1px 1px at 76% 65%, #fff, transparent),
+        radial-gradient(1px 1px at 84% 42%, #fff, transparent),
+        radial-gradient(1px 1px at 92% 78%, #fff, transparent),
+        radial-gradient(1px 1px at 96% 25%, #fff, transparent),
+        radial-gradient(1px 1px at 4% 48%, #fff, transparent),
+        radial-gradient(1px 1px at 9% 75%, #fff, transparent),
+        radial-gradient(1px 1px at 13% 32%, #fff, transparent),
+        radial-gradient(1px 1px at 17% 88%, #fff, transparent),
+        radial-gradient(1px 1px at 21% 18%, #fff, transparent),
+        radial-gradient(1px 1px at 29% 55%, #fff, transparent),
+        radial-gradient(1px 1px at 37% 28%, #fff, transparent),
+        radial-gradient(1px 1px at 41% 82%, #fff, transparent),
+        radial-gradient(1px 1px at 49% 45%, #fff, transparent),
+        radial-gradient(1px 1px at 53% 12%, #fff, transparent),
+        radial-gradient(1px 1px at 61% 68%, #fff, transparent),
+        radial-gradient(1px 1px at 69% 35%, #fff, transparent),
+        radial-gradient(1px 1px at 73% 58%, #fff, transparent),
+        radial-gradient(1px 1px at 77% 22%, #fff, transparent),
+        radial-gradient(1px 1px at 81% 85%, #fff, transparent),
+        radial-gradient(1px 1px at 89% 48%, #fff, transparent),
+        radial-gradient(1px 1px at 93% 72%, #fff, transparent),
+        radial-gradient(1px 1px at 97% 15%, #fff, transparent);
+    background-repeat: repeat;
+    background-size: 200% 200%;
+    animation: twinkle 20s linear infinite;
+    z-index: -1;
+    opacity: 0.95;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.7;
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        opacity: 1;
+        transform: translate(-2%, -2%) scale(1.1);
+    }
+    50% {
+        opacity: 0.9;
+        transform: translate(-5%, -5%) scale(1);
+    }
+    75% {
+        opacity: 1;
+        transform: translate(-3%, -3%) scale(1.05);
+    }
+}
+
+/* Layer Bintang Kedua untuk efek depth */
+.stars-layer2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(1px 1px at 2% 5%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 8% 18%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 14% 32%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 19% 48%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 24% 62%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 29% 75%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 34% 88%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 39% 12%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 44% 28%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 49% 42%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 54% 58%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 59% 72%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 64% 85%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 69% 8%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 74% 22%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 79% 38%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 84% 52%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 89% 68%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 94% 82%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 6% 25%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 11% 45%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 16% 65%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 21% 85%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 26% 15%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 31% 35%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 36% 55%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 41% 75%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 46% 95%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 51% 18%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 56% 38%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 61% 58%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 66% 78%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 71% 12%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 76% 32%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 81% 52%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 86% 72%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 91% 92%, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 96% 8%, rgba(255, 255, 255, 0.5), transparent);
+    background-repeat: repeat;
+    background-size: 150% 150%;
+    animation: twinkle2 25s linear infinite;
+    z-index: -1;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+@keyframes twinkle2 {
+    0%, 100% {
+        opacity: 0.5;
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        opacity: 0.7;
+        transform: translate(3%, 3%) scale(1.05);
+    }
+    66% {
+        opacity: 0.6;
+        transform: translate(-2%, -2%) scale(0.95);
+    }
+}
+
+/* Komet 1 */
+.comet {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 6px #fff,
+        0 0 10px #60a5fa,
+        -30px 0 12px rgba(96, 165, 250, 0.5),
+        -60px 0 15px rgba(139, 92, 246, 0.3),
+        -90px 0 18px rgba(124, 58, 237, 0.2);
+    z-index: -1;
+    animation: comet1 20s ease-in-out infinite;
+}
+
+.comet::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 1.5px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(96, 165, 250, 0.4) 30%,
+        rgba(96, 165, 250, 0.7) 60%,
+        rgba(96, 165, 250, 0.9) 80%,
+        rgba(96, 165, 250, 0.5) 90%,
+        transparent 100%);
+    left: -120px;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: blur(0.5px);
+}
+
+@keyframes comet1 {
+    0% {
+        top: -5%;
+        left: 105%;
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    5% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    15% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    100% {
+        top: 105%;
+        left: -5%;
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+/* Komet 2 */
+.comet2 {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 6px #fff,
+        0 0 10px #60a5fa,
+        -30px 0 12px rgba(96, 165, 250, 0.5),
+        -60px 0 15px rgba(59, 130, 246, 0.3),
+        -90px 0 18px rgba(37, 99, 235, 0.2);
+    z-index: -1;
+    animation: comet2 24s ease-in-out infinite;
+    animation-delay: 7s;
+}
+
+.comet2::before {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 1.5px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(96, 165, 250, 0.4) 30%,
+        rgba(96, 165, 250, 0.7) 60%,
+        rgba(96, 165, 250, 0.9) 80%,
+        rgba(96, 165, 250, 0.5) 90%,
+        transparent 100%);
+    left: -130px;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: blur(0.5px);
+}
+
+@keyframes comet2 {
+    0% {
+        top: 105%;
+        left: -5%;
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    5% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    15% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    100% {
+        top: -5%;
+        left: 105%;
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+/* Komet 3 */
+.comet3 {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 6px #fff,
+        0 0 10px #f472b6,
+        -30px 0 12px rgba(244, 114, 182, 0.5),
+        -60px 0 15px rgba(236, 72, 153, 0.3),
+        -90px 0 18px rgba(219, 39, 119, 0.2);
+    z-index: -1;
+    animation: comet3 22s ease-in-out infinite;
+    animation-delay: 14s;
+}
+
+.comet3::before {
+    content: '';
+    position: absolute;
+    width: 110px;
+    height: 1.5px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(244, 114, 182, 0.4) 30%,
+        rgba(244, 114, 182, 0.7) 60%,
+        rgba(244, 114, 182, 0.9) 80%,
+        rgba(244, 114, 182, 0.5) 90%,
+        transparent 100%);
+    left: -110px;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: blur(0.5px);
+}
+
+@keyframes comet3 {
+    0% {
+        top: 50%;
+        left: 105%;
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    5% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    15% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    100% {
+        top: -5%;
+        left: 50%;
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(15, 12, 41, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-brand:hover {
+    color: #60a5fa;
+    transition: color 0.3s;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-menu a {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.navbar-menu a:hover,
+.navbar-menu a.active {
+    background: rgba(96, 165, 250, 0.2);
+    color: #60a5fa;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: calc(100vh - 200px);
+}
+
+/* Glass Card Effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(96, 165, 250, 0.3);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 10px rgba(96, 165, 250, 0.3);
+}
+
+header p {
+    color: #b0b0b0;
+    font-size: 1.2em;
+}
+
+/* Navigation */
+.main-nav {
+    margin-bottom: 30px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    display: block;
+    padding: 15px 30px;
+    background: rgba(96, 165, 250, 0.2);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.main-nav a:hover {
+    background: rgba(96, 165, 250, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(96, 165, 250, 0.4);
+    border-color: rgba(96, 165, 250, 0.6);
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.welcome-section h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.feature-list {
+    list-style: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.feature-list li {
+    padding: 20px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-left: 4px solid #60a5fa;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+}
+
+thead {
+    background: rgba(96, 165, 250, 0.2);
+    color: #fff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+tbody tr {
+    transition: all 0.3s ease;
+}
+
+tbody tr:hover {
+    background: rgba(96, 165, 250, 0.1);
+}
+
+/* Status Badges */
+.status-aman {
+    color: #4ade80;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
+}
+
+.status-menipis {
+    color: #fbbf24;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+}
+
+.status-kosong {
+    color: #f87171;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(248, 113, 113, 0.5);
+}
+
+/* Status badges tanpa icon */
+
+/* Form Styles */
+.form-section {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 25px;
+    border-radius: 16px;
+    margin: 20px 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-section h3 {
+    color: #60a5fa;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Styling untuk option dropdown */
+select option {
+    background: #1a1625 !important;
+    color: #e0e0e0 !important;
+    padding: 10px;
+}
+
+select option:hover,
+select option:focus {
+    background: rgba(96, 165, 250, 0.3) !important;
+    color: #fff !important;
+}
+
+select option:checked,
+select option[selected] {
+    background: rgba(96, 165, 250, 0.5) !important;
+    color: #fff !important;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #60a5fa;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 15px rgba(96, 165, 250, 0.3);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #888;
+}
+
+/* Styling untuk Date Picker */
+input[type="date"] {
+    color-scheme: dark;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(0.8) brightness(1.2);
+    opacity: 0.8;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+    filter: invert(1) brightness(1.5);
+}
+
+/* Untuk Firefox */
+input[type="date"]::-moz-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(0.8) brightness(1.2);
+    opacity: 0.8;
+}
+
+input[type="date"]::-moz-calendar-picker-indicator:hover {
+    opacity: 1;
+    filter: invert(1) brightness(1.5);
+}
+
+/* Styling untuk date input value */
+input[type="date"]::-webkit-datetime-edit {
+    color: #e0e0e0;
+}
+
+input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+    color: #e0e0e0;
+}
+
+input[type="date"]::-webkit-datetime-edit-text {
+    color: #b0b0b0;
+    padding: 0 0.3em;
+}
+
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+    color: #e0e0e0;
+}
+
+input[type="date"]::-webkit-datetime-edit-month-field:focus,
+input[type="date"]::-webkit-datetime-edit-day-field:focus,
+input[type="date"]::-webkit-datetime-edit-year-field:focus {
+    background: rgba(96, 165, 250, 0.2);
+    color: #fff;
+    border-radius: 3px;
+}
+
+.form-group small {
+    display: block;
+    color: #b0b0b0;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.error-message {
+    color: #f87171;
+    font-size: 0.9em;
+    margin-top: 5px;
+    text-shadow: 0 0 5px rgba(248, 113, 113, 0.5);
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 5px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary {
+    background: rgba(96, 165, 250, 0.3);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: rgba(96, 165, 250, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(96, 165, 250, 0.4);
+    border-color: rgba(96, 165, 250, 0.6);
+}
+
+.btn-success {
+    background: rgba(74, 222, 128, 0.3);
+    color: #fff;
+}
+
+.btn-success:hover {
+    background: rgba(74, 222, 128, 0.5);
+    box-shadow: 0 8px 25px rgba(74, 222, 128, 0.4);
+}
+
+.btn-warning {
+    background: rgba(251, 191, 36, 0.3);
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background: rgba(251, 191, 36, 0.5);
+    box-shadow: 0 8px 25px rgba(251, 191, 36, 0.4);
+}
+
+.btn-danger {
+    background: rgba(248, 113, 113, 0.3);
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: rgba(248, 113, 113, 0.5);
+    box-shadow: 0 8px 25px rgba(248, 113, 113, 0.4);
+}
+
+.btn-secondary {
+    background: rgba(107, 114, 128, 0.3);
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: rgba(107, 114, 128, 0.5);
+    box-shadow: 0 8px 25px rgba(107, 114, 128, 0.4);
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.9em;
+}
+
+/* Filter Section */
+.filter-section {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 16px;
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.filter-section h3 {
+    color: #60a5fa;
+    margin-bottom: 15px;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.filter-group select,
+.filter-group input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Styling untuk select arrow */
+.form-group select,
+.filter-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a78bfa' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+/* Memastikan semua select memiliki styling yang sama */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.filter-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #e0e0e0;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+/* Tracking Styles */
+.tracking-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.tracking-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(96, 165, 250, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.tracking-card h3 {
+    color: #60a5fa;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(96, 165, 250, 0.3);
+    padding-bottom: 10px;
+}
+
+.tracking-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tracking-info-item {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tracking-info-item strong {
+    color: #60a5fa;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tracking-info-item span {
+    color: #e0e0e0;
+}
+
+.perjalanan-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.perjalanan-list li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-left: 4px solid #60a5fa;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.perjalanan-list li strong {
+    color: #60a5fa;
+}
+
+/* Paket Detail */
+.paket-detail {
+    background: rgba(59, 130, 246, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border-left: 4px solid #3b82f6;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.paket-detail h4 {
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+.paket-detail ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.paket-detail li {
+    padding: 5px 0;
+    color: #e0e0e0;
+}
+
+/* Footer */
+footer {
+    background: rgba(15, 12, 41, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    margin-top: 60px;
+    text-align: center;
+    color: #b0b0b0;
+}
+
+.footer-bottom {
+    color: #b0b0b0;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .navbar-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .navbar-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .navbar-menu a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+    }
+    
+    .filter-row {
+        flex-direction: column;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+    
+}
+
+/* Edit Modal Style */
+.edit-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.edit-modal-content {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.edit-modal-content:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(96, 165, 250, 0.3);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.edit-modal-content h3 {
+    color: #60a5fa;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(15, 12, 41, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(96, 165, 250, 0.5);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(96, 165, 250, 0.7);
+}
+
+/* SweetAlert2 Dark Theme Styling */
+.swal2-popup {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+.swal2-title {
+    color: #e0e0e0 !important;
+    font-size: 1.5em !important;
+}
+
+.swal2-content {
+    color: #b0b0b0 !important;
+}
+
+.swal2-confirm {
+    background-color: #60a5fa !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 10px 24px !important;
+    font-size: 1em !important;
+    transition: all 0.3s ease !important;
+}
+
+.swal2-confirm:hover {
+    background-color: #3b82f6 !important;
+    box-shadow: 0 4px 15px rgba(96, 165, 250, 0.4) !important;
+}
+
+.swal2-cancel {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
+    color: #e0e0e0 !important;
+    padding: 10px 24px !important;
+    font-size: 1em !important;
+    transition: all 0.3s ease !important;
+}
+
+.swal2-cancel:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.swal2-icon {
+    border-color: #60a5fa !important;
+}
+
+.swal2-icon.swal2-success {
+    border-color: #10b981 !important;
+}
+
+.swal2-icon.swal2-success [class^=swal2-success-line] {
+    background-color: #10b981 !important;
+}
+
+.swal2-icon.swal2-error {
+    border-color: #ef4444 !important;
+}
+
+.swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+    background-color: #ef4444 !important;
+}
+
+.swal2-icon.swal2-warning {
+    border-color: #f59e0b !important;
+    color: #f59e0b !important;
+}
+
+.swal2-icon.swal2-info {
+    border-color: #60a5fa !important;
+    color: #60a5fa !important;
+}
+
+.swal2-backdrop-show {
+    background: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.swal2-input,
+.swal2-textarea {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
+    color: #e0e0e0 !important;
+    padding: 12px !important;
+}
+
+.swal2-input:focus,
+.swal2-textarea:focus {
+    border-color: #60a5fa !important;
+    box-shadow: 0 0 15px rgba(96, 165, 250, 0.3) !important;
+    outline: none !important;
+}
+
+.swal2-select {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
+    color: #e0e0e0 !important;
+    padding: 12px !important;
+}
+
+.swal2-select:focus {
+    border-color: #60a5fa !important;
+    box-shadow: 0 0 15px rgba(96, 165, 250, 0.3) !important;
+    outline: none !important;
+}
