@@ -155,7 +155,7 @@ Aplikasi website sederhana untuk pemesanan Bahan Ajar di Universitas Terbuka men
 - Refresh halaman akan mengembalikan data ke default
 - Semua validasi dilakukan di client-side
 
-## Kriteria Penilaian yang Dipenuhi
+## Kriteria Penilaian
 
 1. ✅ Arsitektur dan Struktur Proyek Vue.js
 2. ✅ Penggunaan Data Binding & Directive untuk List Rendering
